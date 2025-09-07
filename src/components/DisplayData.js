@@ -7,7 +7,7 @@ const DisplayData = () => {
     const loadData = async (event) => {
         event.preventDefault();
         try {
-            const response = await fetch('/board');
+            const response = await fetch('https://localhost:8080/board');
             const result = await response.json();
             console.log(result);
             setData(result);
